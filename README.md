@@ -16,13 +16,12 @@ Installing this script is pretty easy.
     
   At the time of coding the Script, the Yahoo Finace Free Api was available. But it's now restricted. So I suggest you change the api class with a paid stock data terminal or a free one if its reliable.
   
+  To change this , just check all these functions in the class.yahoostock.php.
   
-````  
-  <?php include_once('class.yahoostock.php');
-$objYahooStock = new YahooStock;
-$objYahooStock->reDl1();
-?>
-
-````
+  redl1() ***(daily stock data feeds)***
+  redl2()  ***(Historical Data)****
+  redl3()   ***(chart feeds)***   
+  
+  These functions control the data feed in the  corresponding cron jobs.
 
 feel free contact me for any installation help. (jegedeakintunde[at]gmail.com)
