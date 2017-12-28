@@ -10,17 +10,19 @@ Installing this script is pretty easy.
 1) Download the Whole Repository as a zip
 2) Then copy the file to your local or Production directory
 3) Afterwards you will need to set the following files on crons job to feed the script with data: 
-    redl1.php redl2.php redl3.php
+    ***redl1.php***<br/>
+    ***redl2.php***<br/>
+    ***redl3.php***<br/>
     
     Setting a cron job time of 10 minutes is fine depending on your data source and realtime duration. For yahoo stcok , it wa 15 minutes, so 10 minutes felt good.
     
   At the time of coding the Script, the Yahoo Finace Free Api was available. But it's now restricted. So I suggest you change the api class with a paid stock data terminal or a free one if its reliable.
   
-  To change this , just check all these functions in the class.yahoostock.php.
+  To add adifferent data source , just check all these functions in the class.yahoostock.php.
   
-  redl1() ***(daily stock data feeds)***
-  redl2()  ***(Historical Data)****
-  redl3()   ***(chart feeds)***   
+  redl1() ***(daily stock data feeds)*** <br/>
+  redl2()  ***(Historical Data)****<br/>
+  redl3()   ***(chart feeds)***   <br/>
   
   These functions control the data feed in the  corresponding cron jobs.
 
